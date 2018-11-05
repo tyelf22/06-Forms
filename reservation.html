@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="conference.css">
+        <link href="https://fonts.googleapis.com/css?family=Krub" rel="stylesheet">
+        <meta charset="UTF-8">
+        <title>Home: Utah Marathon</title>
+    </head>
+    <body>
+        <!-- start of the header-->
+        <header>
+            <h1>Utah - Marathon</h1>
+            <h2>Join us January 2019</h2>
+        </header>
+        <!--Start of the navigation-->
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a>
+                </li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="attend.html">Who Should Attend</a></li>
+                <li><a href="winners.html">Winners</a></li>
+                <li class="active"><a href="reservation.html">Register</a></li>
+            </ul>
+            <div class= "keepOpen"></div>
+        </nav>
+       
+        <!--Start of the main section-->
+        <main>
+                <h1>Register for the race today</h1>
+
+                <form action="FormToEmail.php" method="post" enctype="multipart/form-data" name="attend" class="registerForm"></form>
+                 <fieldset>
+                     <legend>Personal Info</legend>
+                     <label><span>Name:</span> <input type="text" name="name" placeholder="Full Name" required></label>
+                     <label><span>Address:</span> <input type="text" name="address" placeholder="Address" required></label>
+                     <label><span>Email:</span> <input type="text" name="Email" placeholder="email@email.com"></label>
+                     <label><span>Phone:</span> <input type="text" name="phone" placeholder="123-456-789" required pattern="[0-9-. ]{10,14}"></label>
+                 </fieldset>
+
+                 <fieldset>
+                    <legend>PR & Goal</legend>
+                    <label><span>Personal Record:</span> <input type="text" name="PR" placeholder="00:00:00" required></label>
+                    <label><span>Goal:</span> <input type="text" name="Goal" placeholder="00:00:00" required></label>
+                </fieldset>
+       </main>
