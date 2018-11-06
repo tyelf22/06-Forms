@@ -29,18 +29,49 @@
         <main>
                 <h1>Register for the race today</h1>
 
-                <form action="FormToEmail.php" method="post" enctype="multipart/form-data" name="attend" class="registerForm"></form>
+                <form action="FormToEmail.php" method="post" enctype="multipart/form-data" name="attend" class="registerForm">
                  <fieldset>
-                     <legend>Personal Info</legend>
-                     <label><span>Name:</span> <input type="text" name="name" placeholder="Full Name" required></label>
-                     <label><span>Address:</span> <input type="text" name="address" placeholder="Address" required></label>
-                     <label><span>Email:</span> <input type="text" name="Email" placeholder="email@email.com"></label>
-                     <label><span>Phone:</span> <input type="text" name="phone" placeholder="123-456-789" required pattern="[0-9-. ]{10,14}"></label>
+                     <legend>General</legend>
+                     <label><span>Name:</span> <input type="text" name="name" placeholder="Full Name" required class="userInfo"></label>
+                     <label><span>Address:</span> <input type="text" name="address" placeholder="Address" required class="userInfo"></label>
+                     <label><span>Email:</span> <input type="text" name="Email" placeholder="email@email.com" class="userInfo"></label>
+                     <label><span>Phone:</span> <input type="text" name="phone" placeholder="123-456-789" required pattern="[0-9-. ]{10,14}" class="userInfo"></label>
                  </fieldset>
 
                  <fieldset>
-                    <legend>PR & Goal</legend>
-                    <label><span>Personal Record:</span> <input type="text" name="PR" placeholder="00:00:00" required></label>
-                    <label><span>Goal:</span> <input type="text" name="Goal" placeholder="00:00:00" required></label>
+                    <legend>Why are you running the race?</legend>
+                    <label> <input type="radio" name="Reason" value="Enjoy Scenery" required>Enjoy Scenery</label><br>
+                    <label><input type="radio" name="Reason" value="Beat PR" required></label>Beat PR <br>
+                    <label><input type="radio" name="Reason" value="Exercise" required>Exercise</label><br>
+                    <label><input type="radio" name="Reason" value="Win" required>Win</label><br>
+                    
                 </fieldset>
+
+                <fieldset>
+                    <legend>Preferred snacks to be provided</legend>
+                    <label><input type="checkbox" name="proteinBar" value="proteinBar"> Protein Bar</label><br>
+                    <label><input type="checkbox" name="gatorade" value="gatorade">Gatorade</label><br>
+                    <label><input type="checkbox" name="bananas" value="bananas">Bananas</label><br>
+                    <label><input type="checkbox" name="apples" value="apples">Apples</label><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Preferred date for next years race</legend>
+                    <label><span>Date:</span> <input type="date" name="date" class="userInfo"></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Credit Card Info</legend>
+                    <label><span>Credit Card Type:</span></label>
+                    <select name="creditcard" class="userInfo">
+                        <option value="MC"> MasterCard</option>
+                        <option value="V">Visa</option>
+                        <option value="D">Discover</option>
+
+                    </select>
+                </fieldset>
+                <input type="submit" name="submit" value="Sign Me Up" class="userButton">
+
+
+                <input type="hidden" name="subject" value="Conference Registration">
+                <input type="hidden" name="redirect" value="thanks.html">
+
        </main>

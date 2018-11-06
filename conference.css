@@ -207,6 +207,44 @@ dd#email a{
     color: #4D7F5B;
 }
 
+/* form styling*/
+
+form.registerForm fieldset {
+    margin-bottom: 2rem;
+    border-radius: .5rem;
+    font-size: .8rem;
+    color: #0E537F;
+}
+
+form.registerForm legend {
+    font-weight: 600;
+    margin-left: 1rem;
+    color: #4D7F5B;
+}
+form.registerForm span {
+    display: block;
+    padding: .8rem 0 0 .3rem;
+}
+
+form.registerForm .userInfo {
+    color: #0E537F;
+    width: 20rem;
+    border-radius: .6rem;
+    border: solid 1px #cacabb;
+    padding: .4rem;
+    
+}
+
+form.registerForm .userButton {
+    width: 20rem;
+    padding: .8rem;
+    margin-left: 2%;
+    background: #0E537F;
+    border: solid 1px #666;
+    border-radius: .5rem;
+    color: white;
+}
+
 footer{
     background-color: rgb(14, 83, 127);
     text-align: center;
