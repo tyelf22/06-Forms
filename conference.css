@@ -216,6 +216,10 @@ form.registerForm fieldset {
     color: #0E537F;
 }
 
+form.registerForm textarea {
+   display: block;
+}
+
 form.registerForm legend {
     font-weight: 600;
     margin-left: 1rem;
