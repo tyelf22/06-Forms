@@ -192,6 +192,57 @@ main a:hover{
     color: #1290cf;
 }
 
+/*Map styling*/
+
+.myMap {
+    width: 96%;
+    height: 500px;
+    margin-left: 2%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+/* Schedule*/
+
+table.schedule {
+    border-collapse: collapse;
+    font-size: .8rem;
+    border: 1px solid #666;
+    margin: 0 1% 1rem 2%;
+    width: 96%;
+}
+
+table.schedule th{
+    text-align: left;
+    background-color: #1290cf;
+    color: white;
+    font-size: 1.5rem;
+    padding: .1rem .5rem;
+}
+
+table.schedule td {
+    padding: .5rem;
+}
+
+table.schedule tr:nth-child(even) {
+    background-color: #DFDFDF;
+}
+
+table.schedule tr:hover {
+    background-color: #4D7F5B;
+    color: white;
+}
+
+/*Video*/
+
+iframe.video{
+    width: 98%;
+    margin-left: 1%;
+    height: 320px;
+    margin-bottom: 1rem;
+
+}
+
 /* Images */
 
 figure.rightSide{
